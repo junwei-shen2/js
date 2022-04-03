@@ -1,0 +1,64 @@
+# Conduit (Medium Clone based on [realworld.io](https://github.com/gothinkster/realworld))
+
+### Link to API - https://conduit-api-realworld.herokuapp.com/
+
+**Note**: _The website may take a minute to load sometimes, as the server may be in hibernate state_
+
+**_An Express and NodeJS based backend implementation of the [RealWorldAPI](https://github.com/gothinkster/realworld/tree/master/api) Spec._**
+
+_Also **approved** by realworld.io and listed on their [project's home page](https://codebase.show/projects/realworld?category=backend&language=javascript)_.
+
+## Technologies Used
+
+1. **_NodeJS_** - Platform
+2. **_Express_** - Framework
+3. **_JavaScript_** - Programming Language
+4. **_~~MySQL~~_Sqlite3** - Database
+5. **_Sequelize_** - ORM
+
+
+
+## 说明
+
+[demo](https://demo.realworld.io/#/) 网站
+
+这里是nodejs express 后端，其他前端后端参考  [frontends](https://codebase.show/projects/realworld?category=frontend) and [backends](https://codebase.show/projects/realworld?category=backend).
+
+https://github.com/gothinkster/realworld
+
+## install note
+
+```sh
+#安装依赖库
+npm install
+
+#安装依赖工具
+npm install -g sequelize-cli nodemon
+
+#迁移数据库
+sequelize db:migrate
+
+#运行服务
+nodemon index.js
+```
+
+
+
+
+## node模块 sqlite3 手动安装
+
+```sh
+# 安装 工具
+npm install @mapbox/node-pre-gyp -g
+
+# 分别进入 node_modules/sqlite3，bcrypt目录，运行
+
+node-pre-gyp install
+
+# node_module.zip 是 sqilite3  bcrypt  的 win10 /node14 的模块，包含二进制文件
+```
+
+## 安装 rest-client 扩展，查看api.http 文件
+
+https://hoppscotch.io/cn/
+
