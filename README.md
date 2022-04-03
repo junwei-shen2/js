@@ -58,7 +58,16 @@ node-pre-gyp install
 # node_module.zip 是 sqilite3  bcrypt  的 win10 /node14 的模块，包含二进制文件
 ```
 
-## 安装 rest-client 扩展，查看api.http 文件
+### Open API
 
-https://hoppscotch.io/cn/
+#### vscode 安装 rest-client 扩展
+- 查看api.http 文件
 
+####  https://hoppscotch.io/cn/
+- hoppscotch
+
+  
+
+### task
+
+- ORM 用 prisma https://www.freecodecamp.org/news/build-nodejs-database-using-prisma-orm/
