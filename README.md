@@ -66,7 +66,9 @@ node-pre-gyp install
 ####  https://hoppscotch.io/cn/
 - hoppscotch
 
-  
+### mock server 
+
+- https://github.com/stoplightio/prism#-installation-and-usage
 
 ### task
 
