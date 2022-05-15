@@ -4,13 +4,17 @@ const morgan = require('morgan')
 const cors = require('cors')
 
 const {notFound,errorHandler} = require('./middleware/errorHandler')
+
+// ORM
 const sequelize = require('./dbConnection')
 
+// 模型定义
 const User = require('./models/User')
 const Article = require('./models/Article')
 const Tag = require('./models/Tag')
 const Comment = require('./models/Comments')
 
+// 路由设置
 const userRoute = require('./routes/users')
 const articleRoute = require('./routes/articles')
 const commentRoute = require('./routes/comments')
@@ -25,7 +29,7 @@ app.use(cors({credentials: true, origin: true}))
 
 
 
-//RELATIONS:
+//RELATIONS: 模型间关系定义
 //1 to many relation between user and article
 User.hasMany(Article,{
     onDelete: 'CASCADE'
@@ -66,6 +70,8 @@ app.use(morgan('tiny'))
 app.get('/',(req,res) => {
     res.json({status:"API is running"});
 })
+
+// 路由: 用户处理
 app.use('/api',userRoute)
 app.use('/api/articles',articleRoute)
 app.use('/api/articles',commentRoute)

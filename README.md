@@ -45,7 +45,9 @@ nodemon index.js
 
 
 
-## node模块 sqlite3 手动安装
+## node模块 sqlite3  bcrypt 手动安装
+
+上面安装过程中，如报 sqlite3  bcrypt错误，可手动安装
 
 ```sh
 # 安装 工具
@@ -56,7 +58,21 @@ npm install @mapbox/node-pre-gyp -g
 node-pre-gyp install
 
 # node_module.zip 是 sqilite3  bcrypt  的 win10 /node14 的模块，包含二进制文件
+
+
 ```
+
+也可直接下载依赖
+
+https://github.com/TryGhost/node-sqlite3/releases
+拷贝到 node_modules\sqlite3\lib\binding\napi-v3-win32-x64 目录
+
+https://github.com/kelektiv/node.bcrypt.js/releases
+
+node_modules\bcrypt\lib\binding\napi-v3
+
+
+
 
 ### Open API
 
