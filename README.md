@@ -16,8 +16,6 @@ _Also **approved** by realworld.io and listed on their [project's home page](htt
 4. **_~~MySQL~~_Sqlite3** - Database
 5. **_Sequelize_** - ORM
 
-
-
 ## 说明
 
 [demo](https://demo.realworld.io/#/) 网站
@@ -42,9 +40,6 @@ sequelize db:migrate
 nodemon index.js
 ```
 
-
-
-
 ## node模块 sqlite3  bcrypt 手动安装
 
 上面安装过程中，如报 sqlite3  bcrypt错误，可手动安装
@@ -58,8 +53,6 @@ npm install @mapbox/node-pre-gyp -g
 node-pre-gyp install
 
 # node_module.zip 是 sqilite3  bcrypt  的 win10 /node14 的模块，包含二进制文件
-
-
 ```
 
 也可直接下载依赖
@@ -71,18 +64,17 @@ https://github.com/kelektiv/node.bcrypt.js/releases
 
 node_modules\bcrypt\lib\binding\napi-v3
 
-
-
-
 ### Open API
 
 #### vscode 安装 rest-client 扩展
+
 - 查看api.http 文件
 
-####  https://hoppscotch.io/cn/
+#### https://hoppscotch.io/cn/
+
 - hoppscotch
 
-### mock server 
+### mock server
 
 - https://github.com/stoplightio/prism#-installation-and-usage
 
